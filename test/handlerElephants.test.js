@@ -11,5 +11,6 @@ describe('Testes da função HandlerElephants', () => {
     expect(handlerElephants()).toBeUndefined();
     expect(handlerElephants(10)).toBe('Parâmetro inválido, é necessário uma string');
     expect(handlerElephants('popularity')).toBe(5);
+    expect(handlerElephants('whatever')).toBeNull();
   });
 });
